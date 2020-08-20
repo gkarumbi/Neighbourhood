@@ -1,4 +1,4 @@
-<nav class="mb-1 navbar navbar-expand-lg navbar-gradient" style="background-color:rgb(233, 192, 139)">
+<nav class="mb-1 navbar navbar-expand-lg navbar-gradient" style="background-color:rgb(235, 222, 235)">
   <a class="navbar-brand" href="{% url 'index' %}">Our Hood</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
     aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,13 +18,13 @@
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">
         </a>
-        <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333" style="background-color: rgb(62, 167, 216)" class="text-success">
+        <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333"  class="text-success">
           <a class="dropdown-item" href="{% url 'edit-profile' user.username %}">Update Profile</a>
           <a class="dropdown-item" href="{% url 'profile' user.username %}">View Profile</a>
           <a class="dropdown-item" href="{% url 'logout' %}">Log Out</a>
         </div>
       </li>
-      <li class="nav-item active" style="padding-top: 10px"><span class="text-white">{{user.username|title}}</span></li>
+      <li class="nav-item active" style="padding-top: 10px"><span class="text-dark">{{user.username|title}}</span></li>
       
     </ul>
     {% else %}
