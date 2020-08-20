@@ -10,5 +10,7 @@ urlpatterns = [
     url('account/', include('django.contrib.auth.urls')),
     url('all-hoods/',views.neighbourhoods,name='hood'),
     url('new-hood/', views.create_neighbourhood, name='new-hood'),
+    url('profile/<username>', views.profile, name='profile'),
+    url('single_neighbourhood/<hood_id>', views.single_neighbourhood, name='single-neighbourhood'),
     
 ]
