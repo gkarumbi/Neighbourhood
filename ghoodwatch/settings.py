@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'ghoodwatch.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'hood',
+        'NAME': 'jirani',
         'PASSWORD':'Access',
         'USER':'moringa',
     }
