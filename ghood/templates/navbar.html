@@ -11,9 +11,9 @@
     
     {% if user.is_authenticated %}
     <ul class="navbar-nav ml-auto nav-flex-icons"> 
-      <li class="nav-item">
-        <img class="rounded-circle nav-img" src="{{ user.profile.profile_picture.url }}" alt="" style="height: 40px">
-      </li>
+
+        <img src="{{ user.userprofile.profile_picture.url }}" width="240px">
+       
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">
